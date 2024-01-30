@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color:#fff;">
+     
+    
+</body>
+<script> 
+
+// creating an element here it is div 
+  const div=document.createElement('div') // this is to create a element (div)
+  console.log(div);
+  div.className="main" // this is to add the class name  to the div 
+  div.id="myId" // this is to add the id to the div 
+  div.setAttribute("title","generatedTitle")  // to set the attribute such as title 
+  div.style.backgroundColor="green"
+  div.style.padding="10px"
+  //div.innerText="hello" // this is not the preferred way #121
+  const addText=document.createTextNode("hello ii")
+  div.appendChild(addText) // this is the good way to code  not #121
+
+  document.body.appendChild(div)// this will append the div to the body 
+
+
+</script>
+</html>

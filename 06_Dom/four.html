@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // functions to add the value by using functions
+    function addLanguage(langName){// function to add the langauge to the li in html
+        const li = document.createElement('li'); // to create an item (li)
+        li.innerHTML = `${langName}` 
+        document.querySelector('.language').appendChild(li) // adding value to language 
+    }
+   
+    addLanguage("java")
+    addLanguage("phython")
+
+    function addOptimiseLanguage(lang){ // this is more optimise
+        const li = document.createElement('li'); // to create an item (li)
+        li.appendChild(document.createTextNode(lang)) 
+        document.querySelector('.language').appendChild(li)
+     }
+
+     addOptimiseLanguage("cpp")
+
+    // EDIT==> how to edit the things 
+
+
+    const secondLang=document.querySelector('li:nth-child(2)') // this is a property of accessing 
+    // secondLang.innerHTML="Mojo"  //not a good approch
+    const newLi=document.createElement('li')
+    newLi.textContent="Mojo"
+
+    secondLang.replaceWith(newLi) // this is to replace
+
+    const firstLang= document.querySelector('li:first-child')
+    firstLang.outerHTML='<li>okok</li>' // this is also one of the way 
+    const newL=document.createElement('lil')
+    newL.textContent="okok"
+
+    firstLang.replaceWith(newL)
+
+
+    // REMOVE 
+    const lastLang=document.querySelector('li:last-child') // store
+    lastLang.remove() // removing 
+
+    
+
+    
+
+
+</script>
+</html>
