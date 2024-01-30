@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM==> CHai aur Code</title>
+</head>
+<body style="background-color: #212121; color:#fff
+"
+>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+
+    </div>
+</body>
+<script>
+  const parent =document.querySelector('.parent')
+ //console.log(parent)
+ // console.log(parent.children) // this is to get the total children in ANY element
+ //console.log(parent.children[1].innerHTML) // accessing the value of first element that is tuesday
+for(let  i=0;i<parent.children.length;i++)
+{
+    // console.log(parent.children[i].innerHTML);
+}
+
+parent.children[1].style.color='orange' // this is to change the color of the first element 
+// console.log(parent.firstElementChild);// to select the first element
+// console.log(parent.lastElementChild); // to select the last element child 
+
+const day1=document.querySelector('.day')
+console.log(day1)
+console.log(day1.parentElement) // this will go to the parent element 
+console.log(day1.nextElementSibling) // this is go to the sibling element 
+
+console.log("Nodes: ", parent.childNodes)  // this is to get all the nodes of the parent 
+</script>
+
+</html>
