@@ -1,0 +1,43 @@
+.container {
+    width: 575px;
+    height: 825px;
+  
+    background-color: #797978;
+    padding-left: 30px;
+  }
+  #height,
+  #weight {
+    width: 150px;
+    height: 25px;
+    margin-top: 30px;
+  }
+  
+  #weight-guide {
+    margin-left: 75px;
+    margin-top: 25px;
+  }
+  
+  #results {
+    font-size: 35px;
+    margin-left: 90px;
+    margin-top: 20px;
+    color: rgb(241, 241, 241);
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+   }
+  
+  h1 {
+    padding-left: 15px;
+    padding-top: 25px;
+    
+  }
+  
